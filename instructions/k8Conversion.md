@@ -33,4 +33,4 @@ For local development, you will have local docker images, that are not in Docker
 
 Now minikube points to the local docker directory.
 
-**Run the app as specified in the `README.md` in the `k8_conversion` branch.** 
+### Run the app as specified in the `README.md` in the `k8_conversion` branch.
