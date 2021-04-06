@@ -1,7 +1,11 @@
 This repo shows how a docker app can be converted to a Kubernetes (K8) app. 
+The Docker version is in the `main` branch.
+The K8 version is in the `k8_conversion` branch. 
+See this pull request for a side-by-side comparison.
+
 --------
 # Docker Test
-In the main branch:
+To run this app:
 1. Download Docker
 2. Run `docker-compose build` in the top-level directory
 3. Run `docker-compose up` in the same directory
