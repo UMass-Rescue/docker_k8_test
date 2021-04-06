@@ -1,3 +1,0 @@
-1. where is photoanalysisserver_images actually created?? I see microservicetemplate accessing an external volume..
-2. why do both the worker and server use the same dockerfile in photo analysis server.. wouldnt worker not need uvicorn, etc?
-3. so is it fine if the images are stored in a docker volume attached to the server?
