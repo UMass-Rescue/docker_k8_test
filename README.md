@@ -5,15 +5,14 @@ See this pull request for a side-by-side comparison.
 
 --------
 # Docker Test
-To run this app:
-1. Download Docker
-2. Run `docker-compose build` in the top-level directory
-3. Run `docker-compose up` in the same directory
-4. Open the server on `localhost:5000`
-5. Open the microservice/client on `localhost:5001`
+To run this app, 
+1. Make sure you are on the `main` branch
+2. [Download Docker Desktop](https://www.docker.com/products/docker-desktop)
+3. Run `docker-compose build`
+4. Run `docker-compose up`
+5. Open the server on `localhost:5000`
+6. Open the microservice/client on `localhost:5001`
 
-This small docker app sends content from the server to the client via HTTP request initiated by the client.
+This small docker app sends content from the server to the client via HTTP request initiated by the client. Try it out by typing something in the server window, and refreshing the client window!  
 
-
-# Kubernetes Test
-For the conversion to kubernetes, see the branch `k8_conversion`, and the open pull request to see a side-by-side comaprison. 
+To stop this app, type `Ctrl + C` in the command line.
