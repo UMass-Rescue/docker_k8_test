@@ -9,12 +9,7 @@ app = FastAPI()
 def get_content():
     while True:
         try:
-            # f = open("../data/content.txt", 'r')
-            # content = f.read()
-            # f.close()
-            # content = requests.get("http://server.default:5000/images")
-            print("HI")
-            content = requests.get("http://host.docker.internal:5000/images")
+            content = requests.get("http://server.default:5000/images")
             return content.text.strip("\"")
         except Exception as exc:
             return(exc)

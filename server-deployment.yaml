@@ -1,0 +1,41 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    kompose.cmd: kompose convert
+    kompose.version: 1.22.0 (HEAD)
+  creationTimestamp: null
+  labels:
+    io.kompose.service: server
+  name: server
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      io.kompose.service: server
+  strategy: {}
+  template:
+    metadata:
+      annotations:
+        kompose.cmd: kompose convert
+        kompose.version: 1.22.0 (HEAD)
+      creationTimestamp: null
+      labels:
+        io.kompose.service: server
+    spec:
+      containers:
+        - image: server:latest
+          name: server
+          imagePullPolicy: Never
+          ports:
+            - containerPort: 5000
+          resources: {}
+          volumeMounts:
+            - name: server-pvc
+              mountPath: "/data/persistent"
+      volumes:
+      - name: server-pvc
+        persistentVolumeClaim:
+          claimName: serverclaim
+      restartPolicy: Always
+status: {}
