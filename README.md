@@ -1,4 +1,4 @@
-This repo shows how a docker app can be converted to a Kubernetes (k8) app. The Docker version is in the main branch. The k8 version is in the k8_conversion branch. See this pull request for a side-by-side comparison.
+This repo shows how a docker app can be converted to a Kubernetes (k8) app. The Docker version is in the main branch. The k8 version is in the k8_conversion branch. See [this pull request](https://github.com/UMass-Rescue/docker_k8_test/pull/1/files) for a side-by-side comparison.
 
 --------
 # Kubernetes Test
