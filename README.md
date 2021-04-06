@@ -17,4 +17,4 @@ To stop this app:
 1. Run `sh stop_k8.sh`
 2. Run `minkube stop`
 
-**See `k8Conversion.md` for instructions on conversion and `nginx.md` for what I have learned about NGINX** 
+**See `instructions/k8Conversion.md` for instructions on conversion and `instructions/nginx.md` for what I have learned about NGINX** 
